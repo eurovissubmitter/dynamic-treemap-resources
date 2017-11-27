@@ -1,1 +1,0 @@
-for dataset in $(ls ../dynamic-treemap-resources/dataset); do papermill notebooks/TimeBoxplot.ipynb time-notebooks/$(basename $dataset).ipynb -p dataset_id $dataset; done
